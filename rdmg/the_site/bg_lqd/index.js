@@ -5,8 +5,8 @@
                 elem: null,
                 callback: null,
                 ctx: null,
-                width: 0,
-                height: 0,
+                width: 10,
+                height: 10,
                 left: 0,
                 top: 0,
                 init: function(t, i, s) {
