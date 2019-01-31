@@ -7,8 +7,8 @@
     height:100vh;
     width:100vw;
     margin:auto;
-        background: -webkit-gradient(linear, left top, right bottom, from(#000000), to(#000000));
-    background: linear-gradient(to bottom right, #000000, #000000);
+        background: -webkit-gradient(linear, left top, right bottom, from(#EBEBEB), to(#EBEBEB));
+    background: linear-gradient(to bottom right, #EBEBEB, #EBEBEB);
 }
 canvas{
     width:100%;
