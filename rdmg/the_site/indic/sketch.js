@@ -2,22 +2,22 @@ var xvals = [];
 var yvals = [];
 var bvals = [];
 
-function setup() 
+function setup()
 {
-  createCanvas(720, 400);
+  createCanvas(1920, 800);
   strokeWeight(2);
 }
 
 function draw()
 {
-  background(237,34,93);
-  
-  for(var i = 1; i < width; i++) { 
-    xvals[i-1] = xvals[i]; 
+  background(0,237,34,93);
+
+  for(var i = 1; i < width; i++) {
+    xvals[i-1] = xvals[i];
     yvals[i-1] = yvals[i];
     bvals[i-1] = bvals[i];
-  } 
-  // Add the new values to the end of the array 
+  }
+  // Add the new values to the end of the array
   xvals[width-1] = mouseX;
   yvals[width-1] = mouseY;
 
@@ -26,10 +26,7 @@ function draw()
   } else {
     bvals[width-1] = 255;
   }
-  
-  fill(255);
-  noStroke();
-  rect(0, height/3, width, height/3+1);
+
 
   for(var i=1; i<width; i++) {
     stroke(255);
