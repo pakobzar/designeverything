@@ -10,7 +10,7 @@ function setup()
 
 function draw()
 {
-  background(0,237,34,93);
+  background('rgba(0,0,0,0)');
 
   for(var i = 1; i < width; i++) {
     xvals[i-1] = xvals[i];
