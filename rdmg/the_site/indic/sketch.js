@@ -29,11 +29,11 @@ function draw()
 
 
   for(var i=1; i<width; i++) {
-    stroke(255);
+    stroke(72,232,224,10);
     point(i, xvals[i]/3);
-    stroke(0);
+    stroke(84,21,201,10);
     point(i, height/3+yvals[i]/3);
-    stroke(255);
+    stroke(84,21,201,10);
     line(i, 2*height/3+bvals[i]/3, i, (2*height/3+bvals[i-1]/3));
   }
 }
