@@ -67,7 +67,7 @@
         if (15 === o) return [i, s - 1, !1];
         5 === o ? r = 2 === h ? 3 : 1 : 10 === o ? r = 3 === h ? 0 : 2 : (r = this.mscases[o], this.grid[e].computed = this.iter);
         var p = this.step / (Math.abs(Math.abs(this.grid[i + this.plx[4 * r + 2] + (s + this.ply[4 * r + 2]) * (this.sx + 2)].force) - 1) / Math.abs(Math.abs(this.grid[i + this.plx[4 * r + 3] + (s + this.ply[4 * r + 3]) * (this.sx + 2)].force) - 1) + 1);
-        return a.lineTo(this.grid[i + this.plx[4 * r] + (s + this.ply[4 * r]) * (this.sx + 2)].x + this.ix[r] * p, this.grid[i + this.plx[4 * r + 1] + (s + this.ply[4 * r + 1]) * (this.sx + 2)].y + this.ix[r + 4] * p), this.paint = !0, [i + this.ix[r + 4], s + this.ix[r + 8], r]
+        return a.lineTo(this.grid[i + this.plx[4 *   r] + (s + this.ply[4 * r]) * (this.sx + 2)].x + this.ix[r] * p, this.grid[i + this.plx[4 * r + 1] + (s + this.ply[4 * r + 1]) * (this.sx + 2)].y + this.ix[r + 4] * p), this.paint = !0, [i + this.ix[r + 4], s + this.ix[r + 8], r]
     }, e.prototype.renderMetaballs = function() {
         for (var t = 0, i; i = this.balls[t++];) i.move();
         for (this.iter++, this.sign = -this.sign, this.paint = !1, a.fillStyle = this.metaFill, a.beginPath(), t = 0; i = this.balls[t++];) {
@@ -87,5 +87,5 @@
         },
         n = i.screen.init("liquid", null, !0),
         a = n.ctx;
-    n.resize(), t = new e(n.width, n.height, 6, "#181818, "#1F1F1F"), o()
+    n.resize(), t = new e(n.width, n.height, 6, "#181818", "#1f1f1f"), o()
 }();
