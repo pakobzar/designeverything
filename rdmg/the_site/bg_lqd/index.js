@@ -87,5 +87,5 @@
         },
         n = i.screen.init("liquid", null, !0),
         a = n.ctx;
-    n.resize(), t = new e(n.width, n.height, 6, "#181818", "#1f1f1f"), o()
+    n.resize(), t = new e(n.width, n.height, 6, "#181818", "#333333"), o()
 }();
